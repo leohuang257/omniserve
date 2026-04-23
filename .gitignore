@@ -152,6 +152,14 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# --- serving-layer additions ---
+# model weights (multi-GB; fetched separately per README)
+qserve_checkpoints/
+# nested flash-attn fallback clone (has its own .git); install separately
+Block-Sparse-Attention/
+# benchmark output dumps from bench_serving.py
+*.jsonl
+
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
